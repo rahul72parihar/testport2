@@ -17,9 +17,9 @@ const siteConfig = {
   // 1. PERSONAL & BRAND PROFILE
   // ============================================================================
   personal: {
-    name: "Rahul Parihar",
-    firstName: "Rahul",
-    lastName: "Parihar",
+    name: "Editor",
+    firstName: "The",
+    lastName: "Editor",
     brandName: "manwhoedit",
     role: "Video Editor & Motion Graphics Designer",
     tagline: "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic.",
