@@ -157,9 +157,9 @@ const siteConfig = {
   contact: {
     heading: "Get In Touch",
     subheading: "Have a project in mind or want to collaborate? Send a message and let's create something extraordinary.",
-    email: "contact@alexmorgancreative.com",
-    whatsappNumber: "+1234567890",
-    whatsappFormatted: "+1 (234) 567-890",
+    email: "manwhoedit@gmail.com",
+    whatsappNumber: "Details sent to client via email",
+    whatsappFormatted: "Details sent to client via email",
     responseTime: "Within 24 Hours",
     location: "Worldwide / Remote",
   },
