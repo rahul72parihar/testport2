@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Template</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Grid & Glow Effects -->
+  <div class="bg-grid"></div>
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+  <div class="glow-orb glow-orb-3"></div>
+  <div id="mouse-spotlight"></div>
+
+  <!-- Floating Liquid Navbar -->
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="#home" class="nav-brand">
+        <span class="nav-brand-dot"></span>
+        <span id="nav-brand-text">Portfolio</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <!-- Rendered dynamically from config.js -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div id="hero-badge" class="hero-badge"></div>
+        <h1 id="hero-title" class="hero-title"></h1>
+        <p id="hero-subtitle" class="hero-subtitle"></p>
+        <div class="hero-buttons">
+          <a id="hero-btn-primary" href="#projects" class="btn btn-primary"></a>
+          <a id="hero-btn-secondary" href="#contact" class="btn btn-secondary"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Selected Work</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Video Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            Crafting cinematic edits, retention-focused pacing, and dynamic visual narratives. Click any project to watch!
+          </p>
+        </div>
+
+        <!-- Dynamic Category Filter Pills -->
+        <div id="category-filter" class="category-filter"></div>
+
+        <!-- Dynamic Projects Grid -->
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3. Services ("What I Can Do") -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Expertise</span>
+          <h2 class="section-title">
+            What I Can Do <span class="gradient-text">For You</span>
+          </h2>
+          <p class="section-subtitle">
+            Blending technical mastery with visual storytelling to create videos that capture and hold attention.
+          </p>
+        </div>
+        <div id="services-grid" class="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. About Section (Bento Grid) -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">About Me</span>
+          <h2 id="about-heading" class="section-title"></h2>
+          <p class="section-subtitle">
+            Dedicated post-production artist passionate about narrative pacing, color psychology, and soundscapes.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Profile Card -->
+          <div id="bento-profile" class="bento-profile glass-card"></div>
+
+          <!-- Experience Card -->
+          <div class="glass-card bento-stat">
+            <div id="bento-exp-number" class="bento-number">5+</div>
+            <div id="bento-exp-label" class="bento-label">Years Active</div>
+            <p id="bento-exp-desc" style="color: var(--text-muted); font-size: 13px; margin-top: 8px;"></p>
+          </div>
+
+          <!-- Global Reach Card -->
+          <div class="glass-card" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div style="font-size: 32px; margin-bottom: 8px;">🌍</div>
+            <div id="bento-reach-badge" style="display: inline-block; background: rgba(162, 210, 255, 0.15); color: var(--sky-blue); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 50px; margin-bottom: 10px;"></div>
+            <p id="bento-reach-desc" style="color: var(--text-muted); font-size: 13px;"></p>
+          </div>
+
+          <!-- Philosophy Quote -->
+          <div class="glass-card bento-quote">
+            <p id="bento-quote"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Skills & Workflow Timeline -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Toolkit & Process</span>
+          <h2 class="section-title">
+            Skills & <span class="gradient-text">Workflow</span>
+          </h2>
+          <p class="section-subtitle">
+            The professional post-production software and structured milestones that ensure consistent quality.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Tools Column -->
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 20px; color: var(--sky-blue);">Technical Software</h3>
+            <div id="skills-list" class="skills-list"></div>
+          </div>
+
+          <!-- Workflow Column -->
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 20px; color: var(--pastel-petal);">The 6-Step Workflow</h3>
+            <div id="workflow-steps" class="workflow-steps"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Clients Strip -->
+    <div class="clients-wrap">
+      <div class="container">
+        <div class="clients-title">Trusted by Leading Creators & Brands</div>
+        <div id="clients-grid" class="clients-grid"></div>
+      </div>
+    </div>
+
+    <!-- 7. Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Start a Project</span>
+          <h2 id="contact-heading" class="section-title"></h2>
+          <p id="contact-sub" class="section-subtitle"></p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Channels -->
+          <div class="glass-card">
+            <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Direct Contact</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Feel free to reach out directly via email or WhatsApp.</p>
+
+            <div class="contact-info-list">
+              <a id="contact-email" href="#" class="contact-item"></a>
+              <a id="contact-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="contact-item"></a>
+              <div id="contact-location" class="contact-item"></div>
+              <div id="contact-response" class="contact-item"></div>
+            </div>
+          </div>
+
+          <!-- Simple Form -->
+          <div class="glass-card">
+            <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Send a Message</h3>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 24px;">Fill in your project details below:</p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Project Scope & Deliverables</label>
+                <textarea id="form-message" class="form-control" placeholder="Tell me about your video footage, desired length, style..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Popup Modal -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Video Preview</h3>
+        <button id="modal-close" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-video-wrap">
+        <iframe id="modal-iframe" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div id="footer-socials" class="footer-socials"></div>
+      <p id="footer-text" style="color: var(--text-muted); font-size: 14px; margin-bottom: 12px;"></p>
+      <p id="footer-copy" class="footer-copy"></p>
+    </div>
+  </footer>
+
+  <!-- Scripts: config.js must load first, then app.js -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
