@@ -17,11 +17,11 @@ const siteConfig = {
   // 1. PERSONAL & BRAND PROFILE
   // ============================================================================
   personal: {
-    name: "Alex Morgan",
-    firstName: "Alex",
-    lastName: "Morgan",
-    brandName: "AlexMorgan",
-    role: "Senior Video Editor & Motion Graphics Designer",
+    name: "Rahul Parihar",
+    firstName: "Rahul",
+    lastName: "Parihar",
+    brandName: "manwhoedit",
+    role: "Video Editor & Motion Graphics Designer",
     tagline: "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic.",
     bioQuote: "I don't just cut footage; I construct emotions. Every frame must earn its place on the timeline, serving the narrative above all else.",
     avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
