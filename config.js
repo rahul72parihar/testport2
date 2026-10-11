@@ -58,7 +58,7 @@ const siteConfig = {
   // ============================================================================
   hero: {
     badgeText: "Available for Hire",
-    titleLine1: "CINEMATIC",
+    titleLine1: "THE",
     titleLine2: "EDITOR",
     subtitle: "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic.",
     primaryButtonText: "View Work",
